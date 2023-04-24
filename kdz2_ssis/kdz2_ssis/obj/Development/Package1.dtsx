@@ -1,0 +1,1617 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/28/2020 12:28:58 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-JKPSVF0D"
+  DTS:CreatorName="LAPTOP-JKPSVF0D\maxli"
+  DTS:DTSID="{8FC60BDE-E4AB-4E94-9EEB-A4F8AD1A017C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LocaleID="1049"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{A0FF148F-CBC7-4A6D-9908-98C8FD2E26CD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{83B48CE6-5489-493E-8732-B438D1C1FA4E}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\maxli\Desktop\Универ\2 курс\Управление данными\уд кдз 2\USvideoscsv.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ï»¿video_id"
+              DTS:DTSID="{86788B49-7ACD-4648-8E85-8FA35E137D00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="trending_date"
+              DTS:DTSID="{AF2AA859-647E-49A0-A18C-ED01046AFCFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{7964F1C8-78F5-4BA6-A7F9-33E2B11AFDB6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="channel_title"
+              DTS:DTSID="{7B27E8E4-8635-47D4-89D2-9CA23048359E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="category_id"
+              DTS:DTSID="{F0BA8824-9D37-48AF-A470-323115EB37B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="publish_year"
+              DTS:DTSID="{A10498ED-167F-43E1-AA56-062554D9E84B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="publish_month"
+              DTS:DTSID="{B2DFCD6E-DA46-4ACB-96E9-4B6BF4A7D2B8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="publish_day"
+              DTS:DTSID="{0ED5C595-3C5F-4FED-996A-EFAFC6622A67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="publish_hour"
+              DTS:DTSID="{5EECD458-D6F3-4B1B-BC9B-76C58AF93A29}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="publish_min"
+              DTS:DTSID="{471A5229-AADB-468F-A12A-786C3C1B145C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="publish_sec"
+              DTS:DTSID="{B1250E66-7EEA-4BF2-B265-DA2CF7A5EAC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tags"
+              DTS:DTSID="{F8F8BB72-1326-4F47-AE92-029CD6A20B49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="views"
+              DTS:DTSID="{F91911C2-7B93-4649-A8E0-0F896836BA33}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="likes"
+              DTS:DTSID="{9354C6FF-8DDA-4BE2-BD42-D3DFAB671EA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dislikes"
+              DTS:DTSID="{0D2FBE64-A546-42FC-A6E8-60FEC9C3FA25}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="comment_count"
+              DTS:DTSID="{BFB0FE14-D85D-4EF2-A77F-235DA663EABF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="thumbnail_link"
+              DTS:DTSID="{4B4AD709-889C-4FE0-8C54-BF8A3D8D564B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="comments_disabled"
+              DTS:DTSID="{95B04762-5F0C-4ADE-BCB5-52CC0F25FC7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ratings_disabled"
+              DTS:DTSID="{B62897CB-435D-471E-942D-4DDBDE0CB1AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="video_error_or_removed"
+              DTS:DTSID="{33F07EDA-36D2-4EE6-BB1B-37FD25B90E21}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="8000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="description"
+              DTS:DTSID="{A0FE3B12-1F74-4952-B915-C6A50E56CC63}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Задача потока данных"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Задача потока данных"
+      DTS:DTSID="{C38D5F63-AD57-4251-90EA-AF4124370663}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Задача потока данных"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Источник &quot;Неструктурированный файл&quot;;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;1"
+              description="Источник &quot;Неструктурированный файл&quot;"
+              localeId="1033"
+              name="Источник &quot;Неструктурированный файл&quot;"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, считается ли, что столбцы нулевой длины имеют значение NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает имя файла выходного столбца, содержащего имя файла. Если не указано имя, выходной столбец, содержащий имя файла, не будет сформирован."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;]"
+                  name="Выход источника &quot;Неструктурированный файл&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[ï»¿video_id]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[ï»¿video_id]"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[ï»¿video_id]"
+                      name="ï»¿video_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[trending_date]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[trending_date]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[trending_date]"
+                      name="trending_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[title]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[title]"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[channel_title]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[channel_title]"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[channel_title]"
+                      name="channel_title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[category_id]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[category_id]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[category_id]"
+                      name="category_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_year]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_year]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_year]"
+                      name="publish_year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_month]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_month]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_month]"
+                      name="publish_month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_day]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_day]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_day]"
+                      name="publish_day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_hour]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_hour]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_hour]"
+                      name="publish_hour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_min]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_min]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_min]"
+                      name="publish_min"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_sec]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_sec]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_sec]"
+                      name="publish_sec"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[tags]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[tags]"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[tags]"
+                      name="tags"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[views]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[views]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[views]"
+                      name="views"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[likes]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[likes]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[likes]"
+                      name="likes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[dislikes]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[dislikes]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[dislikes]"
+                      name="dislikes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[comment_count]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[comment_count]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[comment_count]"
+                      name="comment_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[thumbnail_link]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[thumbnail_link]"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[thumbnail_link]"
+                      name="thumbnail_link"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[comments_disabled]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[comments_disabled]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[comments_disabled]"
+                      name="comments_disabled"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[ratings_disabled]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[ratings_disabled]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[ratings_disabled]"
+                      name="ratings_disabled"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[video_error_or_removed]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[video_error_or_removed]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[video_error_or_removed]"
+                      name="video_error_or_removed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[description]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[description]"
+                      length="8000"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[description]"
+                      name="description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[ï»¿video_id]"
+                      codePage="65001"
+                      dataType="str"
+                      length="4000"
+                      name="ï»¿video_id" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[trending_date]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="trending_date" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[title]"
+                      codePage="65001"
+                      dataType="str"
+                      length="4000"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[channel_title]"
+                      codePage="65001"
+                      dataType="str"
+                      length="4000"
+                      name="channel_title" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[category_id]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="category_id" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_year]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="publish_year" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_month]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="publish_month" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_day]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="publish_day" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_hour]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="publish_hour" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_min]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="publish_min" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[publish_sec]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="publish_sec" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[tags]"
+                      codePage="65001"
+                      dataType="str"
+                      length="4000"
+                      name="tags" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[views]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="views" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[likes]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="likes" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[dislikes]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="dislikes" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[comment_count]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="comment_count" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[thumbnail_link]"
+                      codePage="65001"
+                      dataType="str"
+                      length="4000"
+                      name="thumbnail_link" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[comments_disabled]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="comments_disabled" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[ratings_disabled]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="ratings_disabled" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[video_error_or_removed]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="video_error_or_removed" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[description]"
+                      codePage="65001"
+                      dataType="str"
+                      length="8000"
+                      name="description" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;]"
+                  isErrorOut="true"
+                  name="Вывод ошибок источника &quot;Неструктурированный файл&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[Столбец вывода ошибок источника &quot;Неструктурированный файл&quot;]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Столбец вывода ошибок источника &quot;Неструктурированный файл&quot;"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[Столбец вывода ошибок источника &quot;Неструктурированный файл&quot;]"
+                      name="Столбец вывода ошибок источника &quot;Неструктурированный файл&quot;" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Задача потока данных\Преобразование данных"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Преобразование данных;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Преобразование данных"
+              name="Преобразование данных"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных]"
+                  name="Входные данные преобразования данных">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[views]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="views"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[views]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[video_error_or_removed]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="video_error_or_removed"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[video_error_or_removed]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[trending_date]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="trending_date"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[trending_date]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[title]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="4000"
+                      cachedName="title"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[title]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[thumbnail_link]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="4000"
+                      cachedName="thumbnail_link"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[thumbnail_link]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[tags]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="4000"
+                      cachedName="tags"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[tags]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[ratings_disabled]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ratings_disabled"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[ratings_disabled]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[publish_year]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="publish_year"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_year]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[publish_sec]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="publish_sec"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_sec]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[publish_month]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="publish_month"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_month]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[publish_min]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="publish_min"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_min]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[publish_hour]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="publish_hour"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_hour]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[publish_day]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="publish_day"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[publish_day]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[likes]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="likes"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[likes]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[ï»¿video_id]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="4000"
+                      cachedName="ï»¿video_id"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[ï»¿video_id]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[dislikes]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="dislikes"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[dislikes]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[description]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="8000"
+                      cachedName="description"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[description]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[comments_disabled]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="comments_disabled"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[comments_disabled]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[comment_count]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="comment_count"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[comment_count]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[channel_title]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="4000"
+                      cachedName="channel_title"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[channel_title]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[category_id]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="category_id"
+                      lineageId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[category_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных]"
+                  exclusionGroup="1"
+                  name="Выходные данные преобразования данных"
+                  synchronousInputId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of views]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of views]"
+                      name="Copy of views"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[views]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of video_error_or_removed]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of video_error_or_removed]"
+                      name="Copy of video_error_or_removed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[video_error_or_removed]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of trending_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of trending_date]"
+                      name="Copy of trending_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[trending_date]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of title]"
+                      name="Copy of title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[title]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of thumbnail_link]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of thumbnail_link]"
+                      name="Copy of thumbnail_link"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[thumbnail_link]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of tags]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of tags]"
+                      name="Copy of tags"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[tags]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of ratings_disabled]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of ratings_disabled]"
+                      name="Copy of ratings_disabled"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[ratings_disabled]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_year]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_year]"
+                      name="Copy of publish_year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[publish_year]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_sec]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_sec]"
+                      name="Copy of publish_sec"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[publish_sec]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_month]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_month]"
+                      name="Copy of publish_month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[publish_month]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_min]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_min]"
+                      name="Copy of publish_min"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[publish_min]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_hour]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_hour]"
+                      name="Copy of publish_hour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[publish_hour]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_day]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of publish_day]"
+                      name="Copy of publish_day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[publish_day]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of likes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of likes]"
+                      name="Copy of likes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[likes]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of ï»¿video_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of ï»¿video_id]"
+                      name="Copy of ï»¿video_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[ï»¿video_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of dislikes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of dislikes]"
+                      name="Copy of dislikes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[dislikes]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of description]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of description]"
+                      name="Copy of description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[description]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of comments_disabled]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of comments_disabled]"
+                      name="Copy of comments_disabled"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[comments_disabled]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of comment_count]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of comment_count]"
+                      name="Copy of comment_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[comment_count]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of channel_title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="4000"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of channel_title]"
+                      name="Copy of channel_title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[channel_title]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of category_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of category_id]"
+                      name="Copy of category_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Источник "Неструктурированный файл".Outputs[Выход источника "Неструктурированный файл"].Columns[category_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Выходные данные ошибок преобразования данных"
+                  synchronousInputId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Задача потока данных.Paths[Выход источника &quot;Неструктурированный файл&quot;]"
+              endId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных]"
+              name="Выход источника &quot;Неструктурированный файл&quot;"
+              startId="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;.Outputs[Выход источника &quot;Неструктурированный файл&quot;]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="190.666666666667,42.6666666666667"
+          Id="Package\Задача потока данных"
+          TopLeft="89.2857129552535,63.1428560137749" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Задача потока данных">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="276,42.6666666666667"
+          Id="Package\Задача потока данных\Источник &quot;Неструктурированный файл&quot;"
+          TopLeft="63.749999050051,31.1999994421005" />
+        <NodeLayout
+          Size="200.666666666667,42.6666666666667"
+          Id="Package\Задача потока данных\Преобразование данных"
+          TopLeft="199.166663698852,140.399997489452" />
+        <EdgeLayout
+          Id="Package\Задача потока данных.Paths[Выход источника &quot;Неструктурированный файл&quot;]"
+          TopLeft="201.749999050051,73.8666661087672">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="97.7499979821344,66.5333313806852"
+              Start="0,0"
+              End="97.7499979821344,59.0333313806852">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.2666656903426" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.2666656903426"
+                    Point2="0,33.2666656903426"
+                    Point3="4,33.2666656903426" />
+                  <mssgle:LineSegment
+                    End="93.7499979821344,33.2666656903426" />
+                  <mssgle:CubicBezierSegment
+                    Point1="93.7499979821344,33.2666656903426"
+                    Point2="97.7499979821344,33.2666656903426"
+                    Point3="97.7499979821344,37.2666656903426" />
+                  <mssgle:LineSegment
+                    End="97.7499979821344,59.0333313806852" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
